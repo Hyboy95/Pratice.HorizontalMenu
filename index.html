@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .menu {
+            margin-top: 10px;
+            height: 30px;
+        }
+        .category {
+            position: relative;
+            float: left;
+        }
+        li {
+            list-style: none;
+        }
+        a {
+            width: 100px;
+            height: 30px;
+            display: block;
+            text-decoration: none;
+            color: white;
+            background-color: black;
+            text-align: center;
+            line-height: 30px;
+        }
+        .sub-category {
+            position: absolute;
+            left: 0;
+            top: 30px;
+            display: none;
+        }
+
+        a:hover {
+            background-color: red;
+        }
+
+        li:hover .sub-category {
+            display: block;
+        }
+
+    </style>
+</head>
+<body>
+<h2>ACCP i10</h2>
+<div class="menu">
+    <ul class="temp">
+        <li class="category"><a href="#" class="content">Sem1</a>
+            <ul class="sub-category">
+                <li><a href="#">Computing</a></li>
+                <li><a href="#">C</a></li>
+                <li><a href="#">Building</a></li>
+                <li><a href="#">MS Transact-</a></li>
+                <li><a href="#">Project</a></li>
+            </ul>
+        </li>
+        <li class="category"><a href="#" class="content">Sem2</a>
+            <ul class="sub-category">
+                <li><a href="#">Cloud</a></li>
+                <li><a href="#">APJ-I</a></li>
+                <li><a href="#">APJ-II</a></li>
+                <li><a href="#">APJ-III</a></li>
+                <li><a href="#">eProject</a></li>
+            </ul></li>
+        <li class="category"><a href="#" class="content">Sem3</a></li>
+        <li class="category"><a href="#" class="content">Sem4</a></li>
+    </ul>
+</div>
+</body>
+</html>
